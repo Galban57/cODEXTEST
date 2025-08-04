@@ -40,6 +40,7 @@ class MyApp(MDApp):
         url = "https://api.coincap.io/v2/assets?limit=100"
         try:
             response = requests.get(url, timeout=10)
+            response.raise_for_status()
             data = response.json().get("data", [])
         except Exception:
             try:
