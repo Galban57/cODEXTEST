@@ -1,94 +1,128 @@
-import json
-import requests
-from kivymd.app import MDApp
-from kivymd.uix.screen import MDScreen
-from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.toolbar import MDTopAppBar
-from kivymd.uix.datatables import MDDataTable
-from kivy.metrics import dp
+import customtkinter as ctk
+
+ctk.set_appearance_mode("light")
+ctk.set_default_color_theme("blue")
 
 
-class MyApp(MDApp):
-    """KivyMD application showing top 100 cryptocurrencies from CoinGecko."""
+class ModernDashboard(ctk.CTk):
+    """Simple dashboard demonstrating a sidebar and info panels using CustomTkinter."""
 
-    def build(self):
-        screen = MDScreen()
-        layout = MDBoxLayout(orientation="vertical")
-        layout.add_widget(MDTopAppBar(title="Top 100 Cryptos"))
+    def __init__(self):
+        super().__init__()
 
-        data_table = MDDataTable(
-            size_hint=(1, 0.9),
-            use_pagination=True,
-            rows_num=10,
-            column_data=[
-                ("Name", dp(30)),
-                ("Price", dp(30)),
-                ("Market Cap", dp(30)),
-                ("VWAP (24Hr)", dp(30)),
-                ("Supply", dp(30)),
-                ("Volume (24Hr)", dp(30)),
-                ("Change (24Hr)", dp(30)),
-            ],
-            row_data=self.fetch_data(),
-        )
-        layout.add_widget(data_table)
-        screen.add_widget(layout)
-        return screen
+        self.title("Course Activity Dashboard")
+        self.geometry("1000x600")
+        self.configure(bg="#F5F6FA")
 
-    def fetch_data(self):
-        """Retrieve top 100 cryptocurrency stats from CoinGecko API."""
-        url = "https://api.coingecko.com/api/v3/coins/markets"
-        params = {
-            "vs_currency": "usd",
-            "order": "market_cap_desc",
-            "per_page": 100,
-            "page": 1,
-            "sparkline": "false",
-        }
-        headers = {"x-cg-demo-api-key": "ae8f74ab-e1b4-4483-86fe-9b59481e0962"}
-        try:
-            response = requests.get(url, params=params, headers=headers, timeout=10)
-            response.raise_for_status()
-            data = response.json()
-        except Exception:
-            try:
-                with open("sample_data.json", "r", encoding="utf-8") as fh:
-                    data = json.load(fh).get("data", [])
-            except Exception:
-                return []
+        # Sidebar
+        self.sidebar = ctk.CTkFrame(self, width=200, corner_radius=0, fg_color="#FFFFFF")
+        self.sidebar.pack(side="left", fill="y")
 
-        rows = []
-        for asset in data:
-            if "current_price" in asset:
-                price = float(asset.get("current_price", 0) or 0)
-                market_cap = float(asset.get("market_cap", 0) or 0)
-                volume = float(asset.get("total_volume", 0) or 0)
-                supply = float(asset.get("circulating_supply", 0) or 0)
-                change = float(asset.get("price_change_percentage_24h", 0) or 0)
-                vwap = (
-                    volume / supply if supply else 0
-                )
-            else:
-                price = float(asset.get("priceUsd", 0) or 0)
-                market_cap = float(asset.get("marketCapUsd", 0) or 0)
-                vwap = float(asset.get("vwap24Hr", 0) or 0)
-                supply = float(asset.get("supply", 0) or 0)
-                volume = float(asset.get("volumeUsd24Hr", 0) or 0)
-                change = float(asset.get("changePercent24Hr", 0) or 0)
+        ctk.CTkLabel(
+            self.sidebar,
+            text="ATTIO",
+            font=("Arial", 20, "bold"),
+            text_color="#2D6CDF",
+        ).pack(pady=(20, 10))
+        for item in ["Dashboard", "Courses", "Schedule", "Analysis", "Messages"]:
+            ctk.CTkButton(
+                self.sidebar,
+                text=item,
+                fg_color="transparent",
+                text_color="#333",
+                hover_color="#E5E5E5",
+            ).pack(pady=5, fill="x", padx=20)
 
-            rows.append(
-                (
-                    asset.get("name", ""),
-                    f"{price:,.2f}",
-                    f"{market_cap:,.2f}",
-                    f"{vwap:,.2f}",
-                    f"{supply:,.0f}",
-                    f"{volume:,.2f}",
-                    f"{change:.2f}%",
-                )
-            )
-        return rows
+        # Main Content
+        self.main = ctk.CTkFrame(self, fg_color="#F5F6FA")
+        self.main.pack(side="left", fill="both", expand=True, padx=20, pady=20)
+
+        ctk.CTkLabel(
+            self.main,
+            text="COURSE ACTIVITY",
+            font=("Arial", 22, "bold"),
+            text_color="#000000",
+        ).pack(anchor="nw")
+
+        # Progress Cards
+        self.progress_frame = ctk.CTkFrame(self.main, fg_color="#FFFFFF", corner_radius=16)
+        self.progress_frame.pack(fill="x", pady=10)
+
+        ctk.CTkLabel(
+            self.progress_frame,
+            text="Course Progress",
+            font=("Arial", 16, "bold"),
+        ).pack(anchor="w", padx=20, pady=(10, 0))
+
+        self.circles = ctk.CTkFrame(self.progress_frame, fg_color="#FFFFFF")
+        self.circles.pack(pady=10, padx=20, fill="x")
+
+        ctk.CTkLabel(
+            self.circles,
+            text="Design Leadership - 68%",
+            font=("Arial", 14),
+        ).pack(side="left", padx=10)
+        ctk.CTkLabel(
+            self.circles,
+            text="UX Design - 43%",
+            font=("Arial", 14),
+        ).pack(side="left", padx=10)
+
+        # Upcoming Courses
+        self.schedule_frame = ctk.CTkFrame(self.main, fg_color="#FFFFFF", corner_radius=16)
+        self.schedule_frame.pack(fill="x", pady=10)
+
+        ctk.CTkLabel(
+            self.schedule_frame,
+            text="Upcoming Courses",
+            font=("Arial", 16, "bold"),
+            text_color="#FF6B00",
+        ).pack(anchor="w", padx=20, pady=(10, 0))
+
+        ctk.CTkLabel(
+            self.schedule_frame,
+            text="User Interface Design - 13:00 to 14:00",
+            font=("Arial", 13),
+        ).pack(anchor="w", padx=20, pady=5)
+        ctk.CTkLabel(
+            self.schedule_frame,
+            text="Design Leadership - 15:00 to 16:00",
+            font=("Arial", 13),
+        ).pack(anchor="w", padx=20, pady=5)
+
+        # Messages & Goal Sidebar
+        self.right_panel = ctk.CTkFrame(self.main, fg_color="#F5F6FA")
+        self.right_panel.place(relx=0.75, rely=0, relheight=1, relwidth=0.25)
+
+        msg_box = ctk.CTkFrame(self.right_panel, fg_color="#FFFFFF", corner_radius=16)
+        msg_box.pack(fill="x", pady=10)
+        ctk.CTkLabel(
+            msg_box,
+            text="Messages",
+            font=("Arial", 15, "bold"),
+            anchor="w",
+        ).pack(anchor="w", padx=15, pady=10)
+        ctk.CTkLabel(
+            msg_box,
+            text="You have 12 unread messages.",
+            font=("Arial", 12),
+        ).pack(anchor="w", padx=15)
+
+        goal_box = ctk.CTkFrame(self.right_panel, fg_color="#FFFFFF", corner_radius=16)
+        goal_box.pack(fill="x", pady=10)
+        ctk.CTkLabel(
+            goal_box,
+            text="My Goal",
+            font=("Arial", 15, "bold"),
+            anchor="w",
+        ).pack(anchor="w", padx=15, pady=10)
+        ctk.CTkLabel(
+            goal_box,
+            text="Progress: 24%",
+            font=("Arial", 12),
+        ).pack(anchor="w", padx=15)
 
 
 if __name__ == "__main__":
-    MyApp().run()
+    app = ModernDashboard()
+    app.mainloop()
