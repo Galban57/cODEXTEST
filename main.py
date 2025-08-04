@@ -1,3 +1,4 @@
+import json
 import requests
 from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
@@ -41,7 +42,11 @@ class MyApp(MDApp):
             response = requests.get(url, timeout=10)
             data = response.json().get("data", [])
         except Exception:
-            return []
+            try:
+                with open("sample_data.json", "r", encoding="utf-8") as fh:
+                    data = json.load(fh).get("data", [])
+            except Exception:
+                return []
 
         rows = []
         for asset in data:

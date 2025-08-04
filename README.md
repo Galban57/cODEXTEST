@@ -12,3 +12,5 @@ python main.py
 ```
 
 The application displays a toolbar and a paginated table showing the top 100 cryptocurrencies with their Price, Market Cap, VWAP (24Hr), Supply, Volume (24Hr), and Change (24Hr).
+
+If the CoinCap API cannot be reached (for example, when offline or behind a restrictive proxy), the app falls back to the local `sample_data.json` file bundled with the project.
