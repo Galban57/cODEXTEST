@@ -1,6 +1,6 @@
 # cODEXTEST
 
-This repository provides a simple example interface built with [KivyMD](https://kivymd.readthedocs.io/).
+This repository provides a simple interface built with [KivyMD](https://kivymd.readthedocs.io/) that fetches data from the [CoinCap API](https://api.coincap.io/).
 
 ## Getting started
 
@@ -11,4 +11,4 @@ pip install -r requirements.txt
 python main.py
 ```
 
-The application shows a toolbar, a counter label, and a button that increments the counter when pressed.
+The application displays a toolbar and a paginated table showing the top 100 cryptocurrencies with their Price, Market Cap, VWAP (24Hr), Supply, Volume (24Hr), and Change (24Hr).
