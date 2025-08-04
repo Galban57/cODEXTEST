@@ -1,16 +1,19 @@
 import customtkinter as ctk
+from tkinter import ttk
+import json
+import requests
 
 ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
 
 
-class ModernDashboard(ctk.CTk):
-    """Simple dashboard demonstrating a sidebar and info panels using CustomTkinter."""
+class CryptoDashboard(ctk.CTk):
+    """Display top cryptocurrencies from CoinCap in a CustomTkinter window."""
 
     def __init__(self):
         super().__init__()
 
-        self.title("Course Activity Dashboard")
+        self.title("Crypto Dashboard")
         self.geometry("1000x600")
         self.configure(bg="#F5F6FA")
 
@@ -20,11 +23,11 @@ class ModernDashboard(ctk.CTk):
 
         ctk.CTkLabel(
             self.sidebar,
-            text="ATTIO",
+            text="CRYPTO",
             font=("Arial", 20, "bold"),
             text_color="#2D6CDF",
         ).pack(pady=(20, 10))
-        for item in ["Dashboard", "Courses", "Schedule", "Analysis", "Messages"]:
+        for item in ["Top 100", "Portfolio", "Settings"]:
             ctk.CTkButton(
                 self.sidebar,
                 text=item,
@@ -39,90 +42,55 @@ class ModernDashboard(ctk.CTk):
 
         ctk.CTkLabel(
             self.main,
-            text="COURSE ACTIVITY",
+            text="TOP 100 CRYPTOS",
             font=("Arial", 22, "bold"),
             text_color="#000000",
         ).pack(anchor="nw")
 
-        # Progress Cards
-        self.progress_frame = ctk.CTkFrame(self.main, fg_color="#FFFFFF", corner_radius=16)
-        self.progress_frame.pack(fill="x", pady=10)
+        table_frame = ctk.CTkFrame(self.main, fg_color="#FFFFFF", corner_radius=16)
+        table_frame.pack(fill="both", expand=True, pady=10)
 
-        ctk.CTkLabel(
-            self.progress_frame,
-            text="Course Progress",
-            font=("Arial", 16, "bold"),
-        ).pack(anchor="w", padx=20, pady=(10, 0))
+        columns = ("price", "market_cap", "vwap", "supply", "volume", "change")
+        self.tree = ttk.Treeview(table_frame, columns=columns, show="headings", height=25)
+        headings = [
+            ("price", "Price (USD)"),
+            ("market_cap", "Market Cap"),
+            ("vwap", "VWAP 24Hr"),
+            ("supply", "Supply"),
+            ("volume", "Volume 24Hr"),
+            ("change", "Change 24Hr"),
+        ]
+        for key, text in headings:
+            self.tree.heading(key, text=text)
+            self.tree.column(key, anchor="e")
+        self.tree.pack(fill="both", expand=True, padx=10, pady=10)
 
-        self.circles = ctk.CTkFrame(self.progress_frame, fg_color="#FFFFFF")
-        self.circles.pack(pady=10, padx=20, fill="x")
+        data = self.fetch_data()
+        for asset in data:
+            self.tree.insert(
+                "",
+                "end",
+                values=(
+                    f"{float(asset.get('priceUsd', 0)):,.2f}",
+                    f"{float(asset.get('marketCapUsd', 0)):,.2f}",
+                    f"{float(asset.get('vwap24Hr', 0)):,.2f}",
+                    f"{float(asset.get('supply', 0)):,.2f}",
+                    f"{float(asset.get('volumeUsd24Hr', 0)):,.2f}",
+                    f"{float(asset.get('changePercent24Hr', 0)):,.2f}%",
+                ),
+            )
 
-        ctk.CTkLabel(
-            self.circles,
-            text="Design Leadership - 68%",
-            font=("Arial", 14),
-        ).pack(side="left", padx=10)
-        ctk.CTkLabel(
-            self.circles,
-            text="UX Design - 43%",
-            font=("Arial", 14),
-        ).pack(side="left", padx=10)
-
-        # Upcoming Courses
-        self.schedule_frame = ctk.CTkFrame(self.main, fg_color="#FFFFFF", corner_radius=16)
-        self.schedule_frame.pack(fill="x", pady=10)
-
-        ctk.CTkLabel(
-            self.schedule_frame,
-            text="Upcoming Courses",
-            font=("Arial", 16, "bold"),
-            text_color="#FF6B00",
-        ).pack(anchor="w", padx=20, pady=(10, 0))
-
-        ctk.CTkLabel(
-            self.schedule_frame,
-            text="User Interface Design - 13:00 to 14:00",
-            font=("Arial", 13),
-        ).pack(anchor="w", padx=20, pady=5)
-        ctk.CTkLabel(
-            self.schedule_frame,
-            text="Design Leadership - 15:00 to 16:00",
-            font=("Arial", 13),
-        ).pack(anchor="w", padx=20, pady=5)
-
-        # Messages & Goal Sidebar
-        self.right_panel = ctk.CTkFrame(self.main, fg_color="#F5F6FA")
-        self.right_panel.place(relx=0.75, rely=0, relheight=1, relwidth=0.25)
-
-        msg_box = ctk.CTkFrame(self.right_panel, fg_color="#FFFFFF", corner_radius=16)
-        msg_box.pack(fill="x", pady=10)
-        ctk.CTkLabel(
-            msg_box,
-            text="Messages",
-            font=("Arial", 15, "bold"),
-            anchor="w",
-        ).pack(anchor="w", padx=15, pady=10)
-        ctk.CTkLabel(
-            msg_box,
-            text="You have 12 unread messages.",
-            font=("Arial", 12),
-        ).pack(anchor="w", padx=15)
-
-        goal_box = ctk.CTkFrame(self.right_panel, fg_color="#FFFFFF", corner_radius=16)
-        goal_box.pack(fill="x", pady=10)
-        ctk.CTkLabel(
-            goal_box,
-            text="My Goal",
-            font=("Arial", 15, "bold"),
-            anchor="w",
-        ).pack(anchor="w", padx=15, pady=10)
-        ctk.CTkLabel(
-            goal_box,
-            text="Progress: 24%",
-            font=("Arial", 12),
-        ).pack(anchor="w", padx=15)
+    def fetch_data(self):
+        url = "https://api.coincap.io/v2/assets?limit=100"
+        try:
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()
+            return response.json()["data"]
+        except Exception:
+            with open("sample_data.json") as f:
+                return json.load(f)["data"]
 
 
 if __name__ == "__main__":
-    app = ModernDashboard()
+    app = CryptoDashboard()
     app.mainloop()
