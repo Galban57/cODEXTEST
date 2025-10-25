@@ -1,0 +1,904 @@
+{
+  "data": [
+    {
+      "name": "Crypto1",
+      "priceUsd": "1000.0",
+      "marketCapUsd": "1000000.0",
+      "vwap24Hr": "100.0",
+      "supply": "50000.0",
+      "volumeUsd24Hr": "2000.0",
+      "changePercent24Hr": "0.5"
+    },
+    {
+      "name": "Crypto2",
+      "priceUsd": "500.0",
+      "marketCapUsd": "500000.0",
+      "vwap24Hr": "50.0",
+      "supply": "100000.0",
+      "volumeUsd24Hr": "4000.0",
+      "changePercent24Hr": "1.0"
+    },
+    {
+      "name": "Crypto3",
+      "priceUsd": "333.3333333333333",
+      "marketCapUsd": "333333.3333333333",
+      "vwap24Hr": "33.333333333333336",
+      "supply": "150000.0",
+      "volumeUsd24Hr": "6000.0",
+      "changePercent24Hr": "1.5"
+    },
+    {
+      "name": "Crypto4",
+      "priceUsd": "250.0",
+      "marketCapUsd": "250000.0",
+      "vwap24Hr": "25.0",
+      "supply": "200000.0",
+      "volumeUsd24Hr": "8000.0",
+      "changePercent24Hr": "2.0"
+    },
+    {
+      "name": "Crypto5",
+      "priceUsd": "200.0",
+      "marketCapUsd": "200000.0",
+      "vwap24Hr": "20.0",
+      "supply": "250000.0",
+      "volumeUsd24Hr": "10000.0",
+      "changePercent24Hr": "2.5"
+    },
+    {
+      "name": "Crypto6",
+      "priceUsd": "166.66666666666666",
+      "marketCapUsd": "166666.66666666666",
+      "vwap24Hr": "16.666666666666668",
+      "supply": "300000.0",
+      "volumeUsd24Hr": "12000.0",
+      "changePercent24Hr": "3.0"
+    },
+    {
+      "name": "Crypto7",
+      "priceUsd": "142.85714285714286",
+      "marketCapUsd": "142857.14285714287",
+      "vwap24Hr": "14.285714285714286",
+      "supply": "350000.0",
+      "volumeUsd24Hr": "14000.0",
+      "changePercent24Hr": "3.5"
+    },
+    {
+      "name": "Crypto8",
+      "priceUsd": "125.0",
+      "marketCapUsd": "125000.0",
+      "vwap24Hr": "12.5",
+      "supply": "400000.0",
+      "volumeUsd24Hr": "16000.0",
+      "changePercent24Hr": "4.0"
+    },
+    {
+      "name": "Crypto9",
+      "priceUsd": "111.11111111111111",
+      "marketCapUsd": "111111.11111111111",
+      "vwap24Hr": "11.11111111111111",
+      "supply": "450000.0",
+      "volumeUsd24Hr": "18000.0",
+      "changePercent24Hr": "4.5"
+    },
+    {
+      "name": "Crypto10",
+      "priceUsd": "100.0",
+      "marketCapUsd": "100000.0",
+      "vwap24Hr": "10.0",
+      "supply": "500000.0",
+      "volumeUsd24Hr": "20000.0",
+      "changePercent24Hr": "5.0"
+    },
+    {
+      "name": "Crypto11",
+      "priceUsd": "90.9090909090909",
+      "marketCapUsd": "90909.09090909091",
+      "vwap24Hr": "9.090909090909092",
+      "supply": "550000.0",
+      "volumeUsd24Hr": "22000.0",
+      "changePercent24Hr": "5.5"
+    },
+    {
+      "name": "Crypto12",
+      "priceUsd": "83.33333333333333",
+      "marketCapUsd": "83333.33333333333",
+      "vwap24Hr": "8.333333333333334",
+      "supply": "600000.0",
+      "volumeUsd24Hr": "24000.0",
+      "changePercent24Hr": "6.0"
+    },
+    {
+      "name": "Crypto13",
+      "priceUsd": "76.92307692307692",
+      "marketCapUsd": "76923.07692307692",
+      "vwap24Hr": "7.6923076923076925",
+      "supply": "650000.0",
+      "volumeUsd24Hr": "26000.0",
+      "changePercent24Hr": "6.5"
+    },
+    {
+      "name": "Crypto14",
+      "priceUsd": "71.42857142857143",
+      "marketCapUsd": "71428.57142857143",
+      "vwap24Hr": "7.142857142857143",
+      "supply": "700000.0",
+      "volumeUsd24Hr": "28000.0",
+      "changePercent24Hr": "7.0"
+    },
+    {
+      "name": "Crypto15",
+      "priceUsd": "66.66666666666667",
+      "marketCapUsd": "66666.66666666667",
+      "vwap24Hr": "6.666666666666667",
+      "supply": "750000.0",
+      "volumeUsd24Hr": "30000.0",
+      "changePercent24Hr": "7.5"
+    },
+    {
+      "name": "Crypto16",
+      "priceUsd": "62.5",
+      "marketCapUsd": "62500.0",
+      "vwap24Hr": "6.25",
+      "supply": "800000.0",
+      "volumeUsd24Hr": "32000.0",
+      "changePercent24Hr": "8.0"
+    },
+    {
+      "name": "Crypto17",
+      "priceUsd": "58.8235294117647",
+      "marketCapUsd": "58823.529411764706",
+      "vwap24Hr": "5.882352941176471",
+      "supply": "850000.0",
+      "volumeUsd24Hr": "34000.0",
+      "changePercent24Hr": "8.5"
+    },
+    {
+      "name": "Crypto18",
+      "priceUsd": "55.55555555555556",
+      "marketCapUsd": "55555.555555555555",
+      "vwap24Hr": "5.555555555555555",
+      "supply": "900000.0",
+      "volumeUsd24Hr": "36000.0",
+      "changePercent24Hr": "9.0"
+    },
+    {
+      "name": "Crypto19",
+      "priceUsd": "52.63157894736842",
+      "marketCapUsd": "52631.57894736842",
+      "vwap24Hr": "5.2631578947368425",
+      "supply": "950000.0",
+      "volumeUsd24Hr": "38000.0",
+      "changePercent24Hr": "9.5"
+    },
+    {
+      "name": "Crypto20",
+      "priceUsd": "50.0",
+      "marketCapUsd": "50000.0",
+      "vwap24Hr": "5.0",
+      "supply": "1000000.0",
+      "volumeUsd24Hr": "40000.0",
+      "changePercent24Hr": "10.0"
+    },
+    {
+      "name": "Crypto21",
+      "priceUsd": "47.61904761904762",
+      "marketCapUsd": "47619.04761904762",
+      "vwap24Hr": "4.761904761904762",
+      "supply": "1050000.0",
+      "volumeUsd24Hr": "42000.0",
+      "changePercent24Hr": "10.5"
+    },
+    {
+      "name": "Crypto22",
+      "priceUsd": "45.45454545454545",
+      "marketCapUsd": "45454.545454545456",
+      "vwap24Hr": "4.545454545454546",
+      "supply": "1100000.0",
+      "volumeUsd24Hr": "44000.0",
+      "changePercent24Hr": "11.0"
+    },
+    {
+      "name": "Crypto23",
+      "priceUsd": "43.47826086956522",
+      "marketCapUsd": "43478.260869565216",
+      "vwap24Hr": "4.3478260869565215",
+      "supply": "1150000.0",
+      "volumeUsd24Hr": "46000.0",
+      "changePercent24Hr": "11.5"
+    },
+    {
+      "name": "Crypto24",
+      "priceUsd": "41.666666666666664",
+      "marketCapUsd": "41666.666666666664",
+      "vwap24Hr": "4.166666666666667",
+      "supply": "1200000.0",
+      "volumeUsd24Hr": "48000.0",
+      "changePercent24Hr": "12.0"
+    },
+    {
+      "name": "Crypto25",
+      "priceUsd": "40.0",
+      "marketCapUsd": "40000.0",
+      "vwap24Hr": "4.0",
+      "supply": "1250000.0",
+      "volumeUsd24Hr": "50000.0",
+      "changePercent24Hr": "12.5"
+    },
+    {
+      "name": "Crypto26",
+      "priceUsd": "38.46153846153846",
+      "marketCapUsd": "38461.53846153846",
+      "vwap24Hr": "3.8461538461538463",
+      "supply": "1300000.0",
+      "volumeUsd24Hr": "52000.0",
+      "changePercent24Hr": "13.0"
+    },
+    {
+      "name": "Crypto27",
+      "priceUsd": "37.03703703703704",
+      "marketCapUsd": "37037.03703703704",
+      "vwap24Hr": "3.7037037037037037",
+      "supply": "1350000.0",
+      "volumeUsd24Hr": "54000.0",
+      "changePercent24Hr": "13.5"
+    },
+    {
+      "name": "Crypto28",
+      "priceUsd": "35.714285714285715",
+      "marketCapUsd": "35714.28571428572",
+      "vwap24Hr": "3.5714285714285716",
+      "supply": "1400000.0",
+      "volumeUsd24Hr": "56000.0",
+      "changePercent24Hr": "14.0"
+    },
+    {
+      "name": "Crypto29",
+      "priceUsd": "34.48275862068966",
+      "marketCapUsd": "34482.75862068965",
+      "vwap24Hr": "3.4482758620689653",
+      "supply": "1450000.0",
+      "volumeUsd24Hr": "58000.0",
+      "changePercent24Hr": "14.5"
+    },
+    {
+      "name": "Crypto30",
+      "priceUsd": "33.333333333333336",
+      "marketCapUsd": "33333.333333333336",
+      "vwap24Hr": "3.3333333333333335",
+      "supply": "1500000.0",
+      "volumeUsd24Hr": "60000.0",
+      "changePercent24Hr": "15.0"
+    },
+    {
+      "name": "Crypto31",
+      "priceUsd": "32.25806451612903",
+      "marketCapUsd": "32258.064516129034",
+      "vwap24Hr": "3.225806451612903",
+      "supply": "1550000.0",
+      "volumeUsd24Hr": "62000.0",
+      "changePercent24Hr": "15.5"
+    },
+    {
+      "name": "Crypto32",
+      "priceUsd": "31.25",
+      "marketCapUsd": "31250.0",
+      "vwap24Hr": "3.125",
+      "supply": "1600000.0",
+      "volumeUsd24Hr": "64000.0",
+      "changePercent24Hr": "16.0"
+    },
+    {
+      "name": "Crypto33",
+      "priceUsd": "30.303030303030305",
+      "marketCapUsd": "30303.030303030304",
+      "vwap24Hr": "3.0303030303030303",
+      "supply": "1650000.0",
+      "volumeUsd24Hr": "66000.0",
+      "changePercent24Hr": "16.5"
+    },
+    {
+      "name": "Crypto34",
+      "priceUsd": "29.41176470588235",
+      "marketCapUsd": "29411.764705882353",
+      "vwap24Hr": "2.9411764705882355",
+      "supply": "1700000.0",
+      "volumeUsd24Hr": "68000.0",
+      "changePercent24Hr": "17.0"
+    },
+    {
+      "name": "Crypto35",
+      "priceUsd": "28.571428571428573",
+      "marketCapUsd": "28571.428571428572",
+      "vwap24Hr": "2.857142857142857",
+      "supply": "1750000.0",
+      "volumeUsd24Hr": "70000.0",
+      "changePercent24Hr": "17.5"
+    },
+    {
+      "name": "Crypto36",
+      "priceUsd": "27.77777777777778",
+      "marketCapUsd": "27777.777777777777",
+      "vwap24Hr": "2.7777777777777777",
+      "supply": "1800000.0",
+      "volumeUsd24Hr": "72000.0",
+      "changePercent24Hr": "18.0"
+    },
+    {
+      "name": "Crypto37",
+      "priceUsd": "27.027027027027028",
+      "marketCapUsd": "27027.027027027027",
+      "vwap24Hr": "2.7027027027027026",
+      "supply": "1850000.0",
+      "volumeUsd24Hr": "74000.0",
+      "changePercent24Hr": "18.5"
+    },
+    {
+      "name": "Crypto38",
+      "priceUsd": "26.31578947368421",
+      "marketCapUsd": "26315.78947368421",
+      "vwap24Hr": "2.6315789473684212",
+      "supply": "1900000.0",
+      "volumeUsd24Hr": "76000.0",
+      "changePercent24Hr": "19.0"
+    },
+    {
+      "name": "Crypto39",
+      "priceUsd": "25.641025641025642",
+      "marketCapUsd": "25641.02564102564",
+      "vwap24Hr": "2.5641025641025643",
+      "supply": "1950000.0",
+      "volumeUsd24Hr": "78000.0",
+      "changePercent24Hr": "19.5"
+    },
+    {
+      "name": "Crypto40",
+      "priceUsd": "25.0",
+      "marketCapUsd": "25000.0",
+      "vwap24Hr": "2.5",
+      "supply": "2000000.0",
+      "volumeUsd24Hr": "80000.0",
+      "changePercent24Hr": "20.0"
+    },
+    {
+      "name": "Crypto41",
+      "priceUsd": "24.390243902439025",
+      "marketCapUsd": "24390.243902439026",
+      "vwap24Hr": "2.4390243902439024",
+      "supply": "2050000.0",
+      "volumeUsd24Hr": "82000.0",
+      "changePercent24Hr": "20.5"
+    },
+    {
+      "name": "Crypto42",
+      "priceUsd": "23.80952380952381",
+      "marketCapUsd": "23809.52380952381",
+      "vwap24Hr": "2.380952380952381",
+      "supply": "2100000.0",
+      "volumeUsd24Hr": "84000.0",
+      "changePercent24Hr": "21.0"
+    },
+    {
+      "name": "Crypto43",
+      "priceUsd": "23.25581395348837",
+      "marketCapUsd": "23255.81395348837",
+      "vwap24Hr": "2.3255813953488373",
+      "supply": "2150000.0",
+      "volumeUsd24Hr": "86000.0",
+      "changePercent24Hr": "21.5"
+    },
+    {
+      "name": "Crypto44",
+      "priceUsd": "22.727272727272727",
+      "marketCapUsd": "22727.272727272728",
+      "vwap24Hr": "2.272727272727273",
+      "supply": "2200000.0",
+      "volumeUsd24Hr": "88000.0",
+      "changePercent24Hr": "22.0"
+    },
+    {
+      "name": "Crypto45",
+      "priceUsd": "22.22222222222222",
+      "marketCapUsd": "22222.222222222223",
+      "vwap24Hr": "2.2222222222222223",
+      "supply": "2250000.0",
+      "volumeUsd24Hr": "90000.0",
+      "changePercent24Hr": "22.5"
+    },
+    {
+      "name": "Crypto46",
+      "priceUsd": "21.73913043478261",
+      "marketCapUsd": "21739.130434782608",
+      "vwap24Hr": "2.1739130434782608",
+      "supply": "2300000.0",
+      "volumeUsd24Hr": "92000.0",
+      "changePercent24Hr": "23.0"
+    },
+    {
+      "name": "Crypto47",
+      "priceUsd": "21.27659574468085",
+      "marketCapUsd": "21276.59574468085",
+      "vwap24Hr": "2.127659574468085",
+      "supply": "2350000.0",
+      "volumeUsd24Hr": "94000.0",
+      "changePercent24Hr": "23.5"
+    },
+    {
+      "name": "Crypto48",
+      "priceUsd": "20.833333333333332",
+      "marketCapUsd": "20833.333333333332",
+      "vwap24Hr": "2.0833333333333335",
+      "supply": "2400000.0",
+      "volumeUsd24Hr": "96000.0",
+      "changePercent24Hr": "24.0"
+    },
+    {
+      "name": "Crypto49",
+      "priceUsd": "20.408163265306122",
+      "marketCapUsd": "20408.163265306124",
+      "vwap24Hr": "2.0408163265306123",
+      "supply": "2450000.0",
+      "volumeUsd24Hr": "98000.0",
+      "changePercent24Hr": "24.5"
+    },
+    {
+      "name": "Crypto50",
+      "priceUsd": "20.0",
+      "marketCapUsd": "20000.0",
+      "vwap24Hr": "2.0",
+      "supply": "2500000.0",
+      "volumeUsd24Hr": "100000.0",
+      "changePercent24Hr": "25.0"
+    },
+    {
+      "name": "Crypto51",
+      "priceUsd": "19.607843137254903",
+      "marketCapUsd": "19607.843137254902",
+      "vwap24Hr": "1.9607843137254901",
+      "supply": "2550000.0",
+      "volumeUsd24Hr": "102000.0",
+      "changePercent24Hr": "25.5"
+    },
+    {
+      "name": "Crypto52",
+      "priceUsd": "19.23076923076923",
+      "marketCapUsd": "19230.76923076923",
+      "vwap24Hr": "1.9230769230769231",
+      "supply": "2600000.0",
+      "volumeUsd24Hr": "104000.0",
+      "changePercent24Hr": "26.0"
+    },
+    {
+      "name": "Crypto53",
+      "priceUsd": "18.867924528301888",
+      "marketCapUsd": "18867.924528301886",
+      "vwap24Hr": "1.8867924528301887",
+      "supply": "2650000.0",
+      "volumeUsd24Hr": "106000.0",
+      "changePercent24Hr": "26.5"
+    },
+    {
+      "name": "Crypto54",
+      "priceUsd": "18.51851851851852",
+      "marketCapUsd": "18518.51851851852",
+      "vwap24Hr": "1.8518518518518519",
+      "supply": "2700000.0",
+      "volumeUsd24Hr": "108000.0",
+      "changePercent24Hr": "27.0"
+    },
+    {
+      "name": "Crypto55",
+      "priceUsd": "18.181818181818183",
+      "marketCapUsd": "18181.81818181818",
+      "vwap24Hr": "1.8181818181818181",
+      "supply": "2750000.0",
+      "volumeUsd24Hr": "110000.0",
+      "changePercent24Hr": "27.5"
+    },
+    {
+      "name": "Crypto56",
+      "priceUsd": "17.857142857142858",
+      "marketCapUsd": "17857.14285714286",
+      "vwap24Hr": "1.7857142857142858",
+      "supply": "2800000.0",
+      "volumeUsd24Hr": "112000.0",
+      "changePercent24Hr": "28.0"
+    },
+    {
+      "name": "Crypto57",
+      "priceUsd": "17.54385964912281",
+      "marketCapUsd": "17543.859649122805",
+      "vwap24Hr": "1.7543859649122806",
+      "supply": "2850000.0",
+      "volumeUsd24Hr": "114000.0",
+      "changePercent24Hr": "28.5"
+    },
+    {
+      "name": "Crypto58",
+      "priceUsd": "17.24137931034483",
+      "marketCapUsd": "17241.379310344826",
+      "vwap24Hr": "1.7241379310344827",
+      "supply": "2900000.0",
+      "volumeUsd24Hr": "116000.0",
+      "changePercent24Hr": "29.0"
+    },
+    {
+      "name": "Crypto59",
+      "priceUsd": "16.949152542372882",
+      "marketCapUsd": "16949.15254237288",
+      "vwap24Hr": "1.694915254237288",
+      "supply": "2950000.0",
+      "volumeUsd24Hr": "118000.0",
+      "changePercent24Hr": "29.5"
+    },
+    {
+      "name": "Crypto60",
+      "priceUsd": "16.666666666666668",
+      "marketCapUsd": "16666.666666666668",
+      "vwap24Hr": "1.6666666666666667",
+      "supply": "3000000.0",
+      "volumeUsd24Hr": "120000.0",
+      "changePercent24Hr": "30.0"
+    },
+    {
+      "name": "Crypto61",
+      "priceUsd": "16.39344262295082",
+      "marketCapUsd": "16393.44262295082",
+      "vwap24Hr": "1.639344262295082",
+      "supply": "3050000.0",
+      "volumeUsd24Hr": "122000.0",
+      "changePercent24Hr": "30.5"
+    },
+    {
+      "name": "Crypto62",
+      "priceUsd": "16.129032258064516",
+      "marketCapUsd": "16129.032258064517",
+      "vwap24Hr": "1.6129032258064515",
+      "supply": "3100000.0",
+      "volumeUsd24Hr": "124000.0",
+      "changePercent24Hr": "31.0"
+    },
+    {
+      "name": "Crypto63",
+      "priceUsd": "15.873015873015873",
+      "marketCapUsd": "15873.015873015873",
+      "vwap24Hr": "1.5873015873015872",
+      "supply": "3150000.0",
+      "volumeUsd24Hr": "126000.0",
+      "changePercent24Hr": "31.5"
+    },
+    {
+      "name": "Crypto64",
+      "priceUsd": "15.625",
+      "marketCapUsd": "15625.0",
+      "vwap24Hr": "1.5625",
+      "supply": "3200000.0",
+      "volumeUsd24Hr": "128000.0",
+      "changePercent24Hr": "32.0"
+    },
+    {
+      "name": "Crypto65",
+      "priceUsd": "15.384615384615385",
+      "marketCapUsd": "15384.615384615385",
+      "vwap24Hr": "1.5384615384615385",
+      "supply": "3250000.0",
+      "volumeUsd24Hr": "130000.0",
+      "changePercent24Hr": "32.5"
+    },
+    {
+      "name": "Crypto66",
+      "priceUsd": "15.151515151515152",
+      "marketCapUsd": "15151.515151515152",
+      "vwap24Hr": "1.5151515151515151",
+      "supply": "3300000.0",
+      "volumeUsd24Hr": "132000.0",
+      "changePercent24Hr": "33.0"
+    },
+    {
+      "name": "Crypto67",
+      "priceUsd": "14.925373134328359",
+      "marketCapUsd": "14925.373134328358",
+      "vwap24Hr": "1.492537313432836",
+      "supply": "3350000.0",
+      "volumeUsd24Hr": "134000.0",
+      "changePercent24Hr": "33.5"
+    },
+    {
+      "name": "Crypto68",
+      "priceUsd": "14.705882352941176",
+      "marketCapUsd": "14705.882352941177",
+      "vwap24Hr": "1.4705882352941178",
+      "supply": "3400000.0",
+      "volumeUsd24Hr": "136000.0",
+      "changePercent24Hr": "34.0"
+    },
+    {
+      "name": "Crypto69",
+      "priceUsd": "14.492753623188406",
+      "marketCapUsd": "14492.753623188406",
+      "vwap24Hr": "1.4492753623188406",
+      "supply": "3450000.0",
+      "volumeUsd24Hr": "138000.0",
+      "changePercent24Hr": "34.5"
+    },
+    {
+      "name": "Crypto70",
+      "priceUsd": "14.285714285714286",
+      "marketCapUsd": "14285.714285714286",
+      "vwap24Hr": "1.4285714285714286",
+      "supply": "3500000.0",
+      "volumeUsd24Hr": "140000.0",
+      "changePercent24Hr": "35.0"
+    },
+    {
+      "name": "Crypto71",
+      "priceUsd": "14.084507042253522",
+      "marketCapUsd": "14084.507042253521",
+      "vwap24Hr": "1.408450704225352",
+      "supply": "3550000.0",
+      "volumeUsd24Hr": "142000.0",
+      "changePercent24Hr": "35.5"
+    },
+    {
+      "name": "Crypto72",
+      "priceUsd": "13.88888888888889",
+      "marketCapUsd": "13888.888888888889",
+      "vwap24Hr": "1.3888888888888888",
+      "supply": "3600000.0",
+      "volumeUsd24Hr": "144000.0",
+      "changePercent24Hr": "36.0"
+    },
+    {
+      "name": "Crypto73",
+      "priceUsd": "13.698630136986301",
+      "marketCapUsd": "13698.630136986301",
+      "vwap24Hr": "1.36986301369863",
+      "supply": "3650000.0",
+      "volumeUsd24Hr": "146000.0",
+      "changePercent24Hr": "36.5"
+    },
+    {
+      "name": "Crypto74",
+      "priceUsd": "13.513513513513514",
+      "marketCapUsd": "13513.513513513513",
+      "vwap24Hr": "1.3513513513513513",
+      "supply": "3700000.0",
+      "volumeUsd24Hr": "148000.0",
+      "changePercent24Hr": "37.0"
+    },
+    {
+      "name": "Crypto75",
+      "priceUsd": "13.333333333333334",
+      "marketCapUsd": "13333.333333333334",
+      "vwap24Hr": "1.3333333333333333",
+      "supply": "3750000.0",
+      "volumeUsd24Hr": "150000.0",
+      "changePercent24Hr": "37.5"
+    },
+    {
+      "name": "Crypto76",
+      "priceUsd": "13.157894736842104",
+      "marketCapUsd": "13157.894736842105",
+      "vwap24Hr": "1.3157894736842106",
+      "supply": "3800000.0",
+      "volumeUsd24Hr": "152000.0",
+      "changePercent24Hr": "38.0"
+    },
+    {
+      "name": "Crypto77",
+      "priceUsd": "12.987012987012987",
+      "marketCapUsd": "12987.012987012988",
+      "vwap24Hr": "1.2987012987012987",
+      "supply": "3850000.0",
+      "volumeUsd24Hr": "154000.0",
+      "changePercent24Hr": "38.5"
+    },
+    {
+      "name": "Crypto78",
+      "priceUsd": "12.820512820512821",
+      "marketCapUsd": "12820.51282051282",
+      "vwap24Hr": "1.2820512820512822",
+      "supply": "3900000.0",
+      "volumeUsd24Hr": "156000.0",
+      "changePercent24Hr": "39.0"
+    },
+    {
+      "name": "Crypto79",
+      "priceUsd": "12.658227848101266",
+      "marketCapUsd": "12658.227848101265",
+      "vwap24Hr": "1.2658227848101267",
+      "supply": "3950000.0",
+      "volumeUsd24Hr": "158000.0",
+      "changePercent24Hr": "39.5"
+    },
+    {
+      "name": "Crypto80",
+      "priceUsd": "12.5",
+      "marketCapUsd": "12500.0",
+      "vwap24Hr": "1.25",
+      "supply": "4000000.0",
+      "volumeUsd24Hr": "160000.0",
+      "changePercent24Hr": "40.0"
+    },
+    {
+      "name": "Crypto81",
+      "priceUsd": "12.345679012345679",
+      "marketCapUsd": "12345.67901234568",
+      "vwap24Hr": "1.2345679012345678",
+      "supply": "4050000.0",
+      "volumeUsd24Hr": "162000.0",
+      "changePercent24Hr": "40.5"
+    },
+    {
+      "name": "Crypto82",
+      "priceUsd": "12.195121951219512",
+      "marketCapUsd": "12195.121951219513",
+      "vwap24Hr": "1.2195121951219512",
+      "supply": "4100000.0",
+      "volumeUsd24Hr": "164000.0",
+      "changePercent24Hr": "41.0"
+    },
+    {
+      "name": "Crypto83",
+      "priceUsd": "12.048192771084338",
+      "marketCapUsd": "12048.192771084337",
+      "vwap24Hr": "1.2048192771084338",
+      "supply": "4150000.0",
+      "volumeUsd24Hr": "166000.0",
+      "changePercent24Hr": "41.5"
+    },
+    {
+      "name": "Crypto84",
+      "priceUsd": "11.904761904761905",
+      "marketCapUsd": "11904.761904761905",
+      "vwap24Hr": "1.1904761904761905",
+      "supply": "4200000.0",
+      "volumeUsd24Hr": "168000.0",
+      "changePercent24Hr": "42.0"
+    },
+    {
+      "name": "Crypto85",
+      "priceUsd": "11.764705882352942",
+      "marketCapUsd": "11764.70588235294",
+      "vwap24Hr": "1.1764705882352942",
+      "supply": "4250000.0",
+      "volumeUsd24Hr": "170000.0",
+      "changePercent24Hr": "42.5"
+    },
+    {
+      "name": "Crypto86",
+      "priceUsd": "11.627906976744185",
+      "marketCapUsd": "11627.906976744185",
+      "vwap24Hr": "1.1627906976744187",
+      "supply": "4300000.0",
+      "volumeUsd24Hr": "172000.0",
+      "changePercent24Hr": "43.0"
+    },
+    {
+      "name": "Crypto87",
+      "priceUsd": "11.494252873563218",
+      "marketCapUsd": "11494.252873563219",
+      "vwap24Hr": "1.1494252873563218",
+      "supply": "4350000.0",
+      "volumeUsd24Hr": "174000.0",
+      "changePercent24Hr": "43.5"
+    },
+    {
+      "name": "Crypto88",
+      "priceUsd": "11.363636363636363",
+      "marketCapUsd": "11363.636363636364",
+      "vwap24Hr": "1.1363636363636365",
+      "supply": "4400000.0",
+      "volumeUsd24Hr": "176000.0",
+      "changePercent24Hr": "44.0"
+    },
+    {
+      "name": "Crypto89",
+      "priceUsd": "11.235955056179776",
+      "marketCapUsd": "11235.955056179775",
+      "vwap24Hr": "1.1235955056179776",
+      "supply": "4450000.0",
+      "volumeUsd24Hr": "178000.0",
+      "changePercent24Hr": "44.5"
+    },
+    {
+      "name": "Crypto90",
+      "priceUsd": "11.11111111111111",
+      "marketCapUsd": "11111.111111111111",
+      "vwap24Hr": "1.1111111111111112",
+      "supply": "4500000.0",
+      "volumeUsd24Hr": "180000.0",
+      "changePercent24Hr": "45.0"
+    },
+    {
+      "name": "Crypto91",
+      "priceUsd": "10.989010989010989",
+      "marketCapUsd": "10989.010989010989",
+      "vwap24Hr": "1.098901098901099",
+      "supply": "4550000.0",
+      "volumeUsd24Hr": "182000.0",
+      "changePercent24Hr": "45.5"
+    },
+    {
+      "name": "Crypto92",
+      "priceUsd": "10.869565217391305",
+      "marketCapUsd": "10869.565217391304",
+      "vwap24Hr": "1.0869565217391304",
+      "supply": "4600000.0",
+      "volumeUsd24Hr": "184000.0",
+      "changePercent24Hr": "46.0"
+    },
+    {
+      "name": "Crypto93",
+      "priceUsd": "10.75268817204301",
+      "marketCapUsd": "10752.68817204301",
+      "vwap24Hr": "1.075268817204301",
+      "supply": "4650000.0",
+      "volumeUsd24Hr": "186000.0",
+      "changePercent24Hr": "46.5"
+    },
+    {
+      "name": "Crypto94",
+      "priceUsd": "10.638297872340425",
+      "marketCapUsd": "10638.297872340425",
+      "vwap24Hr": "1.0638297872340425",
+      "supply": "4700000.0",
+      "volumeUsd24Hr": "188000.0",
+      "changePercent24Hr": "47.0"
+    },
+    {
+      "name": "Crypto95",
+      "priceUsd": "10.526315789473685",
+      "marketCapUsd": "10526.315789473685",
+      "vwap24Hr": "1.0526315789473684",
+      "supply": "4750000.0",
+      "volumeUsd24Hr": "190000.0",
+      "changePercent24Hr": "47.5"
+    },
+    {
+      "name": "Crypto96",
+      "priceUsd": "10.416666666666666",
+      "marketCapUsd": "10416.666666666666",
+      "vwap24Hr": "1.0416666666666667",
+      "supply": "4800000.0",
+      "volumeUsd24Hr": "192000.0",
+      "changePercent24Hr": "48.0"
+    },
+    {
+      "name": "Crypto97",
+      "priceUsd": "10.309278350515465",
+      "marketCapUsd": "10309.278350515464",
+      "vwap24Hr": "1.0309278350515463",
+      "supply": "4850000.0",
+      "volumeUsd24Hr": "194000.0",
+      "changePercent24Hr": "48.5"
+    },
+    {
+      "name": "Crypto98",
+      "priceUsd": "10.204081632653061",
+      "marketCapUsd": "10204.081632653062",
+      "vwap24Hr": "1.0204081632653061",
+      "supply": "4900000.0",
+      "volumeUsd24Hr": "196000.0",
+      "changePercent24Hr": "49.0"
+    },
+    {
+      "name": "Crypto99",
+      "priceUsd": "10.1010101010101",
+      "marketCapUsd": "10101.0101010101",
+      "vwap24Hr": "1.0101010101010102",
+      "supply": "4950000.0",
+      "volumeUsd24Hr": "198000.0",
+      "changePercent24Hr": "49.5"
+    },
+    {
+      "name": "Crypto100",
+      "priceUsd": "10.0",
+      "marketCapUsd": "10000.0",
+      "vwap24Hr": "1.0",
+      "supply": "5000000.0",
+      "volumeUsd24Hr": "200000.0",
+      "changePercent24Hr": "50.0"
+    }
+  ]
+}
